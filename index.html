@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1400">
+
+  <link rel="stylesheet" href="index.css">
+
+
+  <title>고객센터</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script/taps.js"></script>
+  <script src="script/menu_top_fixed.js"></script>
+  <script src="script/accordion.js"></script>
+  <script src="script/search.js"></script>
+
+</head>
+
+<body>
+  <!-- 메뉴 -->
+  <div id="gnb">
+    <div class="gnb_inner">
+      <ul class="left gnb1">
+        <li><a href="#">공연안내</a></li>
+        <li><a href="#">티켓예매</a></li>
+        <li><a href="#">아카데미</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+
+      <ul class="right gnb2">
+        <li><a href="#">기관소개</a></li>
+        <li><a href="#">알림마당</a></li>
+
+        <li><a href="#" id="small">MD샵</a></li>
+        <li><a href="#" id="small">로그인</a></li>
+
+        <li><a href="#"><img src="images/sub_calendar.png" alt="달력"></a></li>
+        <li>
+          <div class="search-wrapper">
+            <div class="input-holder">
+              <input type="text" class="search-input" placeholder="검색" />
+              <button class="search-icon" onclick="searchToggle(this, event);">
+                <span><img src="images/sub_search.png" alt=""></span>
+              </button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="#"><img src="images/sub_logo.png" alt="로고" id="sub_logo"></a>
+
+    </div>
+  </div>
+
+
+  <!-- 상단 고정 메뉴 -->
+  <div class="gnb_top">
+    <div class="gnb_top_inner">
+      <ul class="left gnb1_top">
+        <li><a href="#">공연안내</a></li>
+        <li><a href="#">티켓예매</a></li>
+        <li><a href="#">아카데미</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+
+      <ul class="right gnb2_top">
+        <li><a href="#">기관소개</a></li>
+        <li><a href="#">알림마당</a></li>
+
+        <li><a href="#" id="small_top">MD샵</a></li>
+        <li><a href="#" id="small_top">로그인</a></li>
+
+        <li><a href="#"><img src="images/sub_calendar_w.png" alt="달력"></a></li>
+        <li>
+          <div class="search-wrapper_top">
+            <div class="input-holder_top">
+              <input type="text" class="search-input_top" placeholder="검색" />
+              <button class="search-icon_top" onclick="searchToggle_top(this, event);">
+                <span><img src="images/sub_search_w.png" alt=""></span>
+              </button>
+            </div>
+            <span class="close_top" onclick="searchToggle_top(this, event);"></span>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#"><img src="images/fix_logo.png" alt="로고" id="logo_top"></a>
+    </div>
+  </div>
+
+
+  <!-- 배너 -->
+  <div id="banner">
+    <h1>고객센터</h1>
+  </div>
+
+  <!-- 작은메뉴 -->
+  <div id="nav">
+    <div class="nav_inner">
+      <ul>
+        <li><a href="#"><img src="images/sub_home.png" alt="홈"></a></li>
+        <li>
+          <h2>고객센터</h2>
+          <img src="images/sub_right.png" alt="화살표" class="right">
+        </li>
+        <li>
+          <h2>이용안내</h2>
+          <img src="images/sub_right.png" alt="화살표" class="right">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="box">
+    <h1>이용안내</h1>
+
+    <ul class="tabs">
+      <li class="on"><a href="#">시설안내</a> </li>
+      <li><a href="#">이용안내</a></li>
+      <li><a href="#">예매안내</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">회원혜택안내</a></li>
+    </ul>
+
+    <div class="tab_con on" id="tab_con1">
+      <h1>시설안내</h1>
+
+      <ul>
+        <li>
+          <img src="images/four_1-1.jpg" alt="로비">
+
+          <div class="text_box">
+            <h3>로비</h3>
+            <p>
+              건축물의 외부 패턴을 내부에 그대로 끌어들여, 채광과 아름다운 북항의 <br>
+              자연경관을 로비에 들여놓은 로비공간을 조성하였다.<br>
+              밝고 깨끗한 이미지의 하얀색 프레임을 통해 내부로 들어오면,<br>
+              반대로 강렬한 인상의 우드 드럼의 매스가 맞이한다.<br>
+              중후한 톤의 목재 로 된 겉옷과 붉은색의 내피는 마치 거대한 악기와 같은<br>
+              이미지를 떠오르게 하고, 곧 이어질 ‘Auditorium’의 강렬한 이미지를<br>
+              암시적으로 나타내는 경계의 공간으로 이루어진다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-2.jpg" alt="오디토리움">
+
+          <div class="text_box">
+            <h3>오디토리움</h3>
+            <span>객석 : 1,800석</span>
+            <p>
+              오페라 하우스의 심장이 되는 공간이다. 내부로 진입하면<br>
+              짙고, 강렬한 톤의 균질한 목재가 바닥으로부터 시작하여,<br>
+              벽체를 휘감고, 발코니를 타고 올라가 천장의 말발굽 형태까지<br>
+              자연스럽게 흘러간다.<br>
+              그 중심엔 금색 물결을 두르고 있는 크리스탈 빛이 공간을 휘어잡고 있다.<br>
+              벽체 또는 발코니 등 전체 공간에 적용되는 목재는 음 환경 조성을<br>
+              위하여 다양한 형태로 구성되었다.<br>
+              이러한 구성은 전기음향 설비와 더불어 최고 수준의 오페라와<br>
+              오케스트라의 어쿠스틱 공연이 가능하도록 조성되었다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-3.jpg" alt="퍼포먼스홀">
+
+          <div class="text_box">
+            <h3>퍼포먼스홀</h3>
+            <span>객석 : 1,800석</span>
+            <p>
+              퍼포먼스, 다목적 공연을 수용하는 공간으로,<br>
+              전체적으로 우드 톤의 마감재와 루버로 계획이 되어있고, 부분적으로<br>
+              커튼을 활용하여 목적에 맞게 내부 환경을 조율할 수 있도록 계획하였다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-4.jpg" alt="오페라 리허설실">
+
+          <div class="text_box">
+            <h3>오페라 리허설실</h3>
+            <p>
+              1면에 거울를 배치하여 관객에게 보여지는 모습을 보며 연습할 수 있다.<br>
+              천장 조명은 원하는 위치에서 국부 조절도 가능하게 설계되었다. <br>
+              최대한 간결하게 공간을 구성하여 장기간 연습하는데 있어서
+              불편함이 없게 계획되었다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-5.jpg" alt="풀사이즈 리허설실">
+
+          <div class="text_box">
+            <h3>풀사이즈 리허설실</h3>
+            <p>
+              풀사이즈 리허설룸은 오디토리움과 같은 컨디션으로 본 무대에 서기 전<br>
+              최종 리허설을 할 수 있는 공간이며, 블랙박스로 디자인을 최소화하고<br>
+              연기자의 연기력과 오로지 무대만을 위한 공간이다. <br>
+              때로는 이동식 객석을 이용하여 공연장으로도 이용할 수 있게 설계하였다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-6.jpg" alt="발레 리허설실">
+
+          <div class="text_box">
+            <h3>발레 리허설실</h3>
+            <p>
+              3면에 거울를 배치하여 자유로운 각도와 포지션에서 연습에 집중력을<br>
+              높여주어 디자인과 기능을 갖춘 리허설디자인을 완성하였다. <br>
+              내부 조명 계획은 직접 조명을 최소화하여, 장시간 연습하는데 있어<br>
+              피로감을 최소로 하기 위하여 계획되었다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="images/four_1-7.jpg" alt="오케스트라 리허설실">
+
+          <div class="text_box">
+            <h3>오케스트라 리허설실</h3>
+            <p>
+              최적화된 음환경 조성을 위하여 계획되었고, 건축물의 외부 모듈을<br>
+              재해석하여, 통일성 있는 디자인을 조성하였다.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="tab_con" id="tab_con2">
+      <h1>관람예절</h1>
+
+      <table id="con2_table">
+        <tr>
+          <td>
+            <img src="images/four_3-1.png" alt="소리금지">
+          </td>
+          <td>
+            <h3>
+              감상을 방해할 만한 행동
+            </h3>
+            <p>
+              - 객석 내 음식물 반입 및 섭취<br>
+              - 공연 중 옆사람과의 대화<br>
+              - 공연 중 서서 관람하는 행위<br>
+              - 지정석 이외의 자리에 앉는 행위<br>
+              - 음주 후 공연 관람<br>
+            </p>
+          </td>
+          <td>
+            <img src="images/four_3-2.png" alt="촬영금지">
+          </td>
+          <td>
+            <h3>
+              사진 촬영은 절대 금물
+            </h3>
+            <p>
+              공연 중에는 사전 허가를 받은 전문인만<br>
+              사진을 촬영 할 수 있습니다.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/four_3-3.png" alt="연령확인">
+          </td>
+          <td>
+            <h3>
+              어린이 동행 시<br>
+              출입 가능한 나이 사전 확인
+            </h3>
+            <p>
+              공연 내용에 따라 5세이상, 7세 이상, 12세 이상 등<br>
+              관람가능 연령이 나누어져 있으며 <br>
+              사전에 확인해주시기 바랍니다.
+            </p>
+          </td>
+          <td>
+            <img src="images/four_3-4.png" alt="시간엄수">
+          </td>
+          <td>
+            <h3>
+              공연장 도착은 20분전,<br>
+              객석 입장은 10분 전
+            </h3>
+            <p>
+              원칙적으로 공연 시작 이후 공연장 입장은 금지이나<br>
+              지연 관객을 위한 입장이 있다면<br>
+              안내원의 안내에 따라 빈 좌석에 착석하여 주시고<br>
+              휴식시간에 본 좌석으로 이동하여 주시기 바랍니다.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/four_3-5.png" alt="음식물금지">
+          </td>
+          <td>
+            <h3>
+              음식물은 휴게실에서<br>
+              공연장에선 공연감상만
+            </h3>
+            <p>
+              모든 일체의 음식물은 공연장 안으로 가져갈 수 없습니다.<br>
+              자신의 조그만 부주의가 공연자는 물론 객석의 관람자에게도<br>
+              큰 피해를 주어 공연장 분위기를 망칠 수 있으니,<br>
+              음식물은 꼭 드신 후 입장해 주시기 바랍니다.
+            </p>
+          </td>
+          <td>
+            <img src="images/four_3-6.png" alt="주의">
+          </td>
+          <td>
+            <h3>
+              공연장에서 조심해야 할 물건들
+            </h3>
+            <p>
+              소리가 많이 나는 비닐제품이나 꽃다발, 음식물 등은<br>
+              물품보관소에 맡겨주시고,<br>
+              휴대폰 전원은 종료 후에 입장 해주시기 바랍니다.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+
+      <h1>편의시설</h1>
+
+      <ul id="con2_2">
+        <li>
+          <img src="images/four_2-1.jpg" alt="카페">
+
+          <div class="text_box">
+            <h3>카페</h3>
+            <span>1층 투썸플레이스 / 5층 부오하 카페테리아</span>
+            <p>
+              옥상 중앙에 위치한 야외카페로 <br>
+              부산항과 남포동 전경을 바라볼 수 있으며 <br>
+              카페 앞 계단에 앉아서 야외 공연을 즐길 수 있는 곳으로 <br>
+              넓은 공원을 산책한 뒤 휴식을 즐기기 좋은 곳입니다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <img src="images/four_2-2.jpg" alt="레스토랑">
+
+          <div class="text_box">
+            <h3>레스토랑</h3>
+            <span>1층 투썸플레이스 / 5층 부오하 카페테리아</span>
+            <p>
+              공연 관람 전후, 식사를 못하신 고객분들을 위해 간단한 음식부터 <br>
+              캐쥬얼한 레스토랑을 운영하고 있습니다.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <img src="images/four_2-3.jpg" alt="물품보관함">
+
+          <div class="text_box">
+            <h3>물품보관함</h3>
+            <p id="little">
+              편안한 공연 관람을 위해 무인 물품보관함을 이용하실 수 있습니다
+            </p>
+
+            <h5>운영시간</h5>
+            <p>로비 개방 시 ~ 마지막 공연 종료 20분 후</p>
+
+            <br>
+            <h5>이용료</h5>
+
+            <table id="con2_table2">
+              <tr>
+                <th rowspan="2">당일티켓<br>소지자</th>
+                <td id="center">이용료</td>
+                <td>4시간 무료</td>
+              </tr>
+              <tr>
+                <td id="center">추가 <br> 이용료</td>
+                <td>소형(500*360*600) 1,000원(시간 당) <br>
+                  대형(500*900*600) 2,000원(시간 당)</td>
+              </tr>
+              <tr>
+                <th>당일티켓<br>미소지자</th>
+                <td id="center">이용료</td>
+                <td>소형(500*360*600) 1,000원(시간 당) <br>
+                  대형(500*900*600) 2,000원(시간 당)</td>
+              </tr>
+            </table>
+
+            <h6> ※ 당일 티켓 소지자는 최초 4시간 무료 이용이 가능하며, <br>
+              시간 초과 시 추가 이용금액을 지불하셔야 합니다. </h6>
+
+            <h5>이용방법</h5>
+            <p>공연 티켓의 QR코드를 기기화면에 인식 (중복사용 불가)</p>
+
+            <h5>전화번호</h5>
+            <p>051–100-1000(10:00~20:00)</p>
+
+            <h6>
+              ※ 반입제한 물품인 꽃다발, 음식물 등을 자율 보관하여 주시고, <br>
+              공연 종료 후에는 반드시 수거해 주시기 바랍니다. </h6>
+
+          </div>
+        </li>
+
+        <li>
+          <img src="images/four_2-4.jpg" alt="전시장">
+
+          <div class="text_box">
+            <h3>전시장</h3>
+            <p>
+              현재 상연하는 공연과 관련된 전시장을 운영하고 있습니다.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div id="con2_3">
+        <h1>분실물</h1>
+        <h3>분실물 확인 : 안전관리팀</h3>
+        <h6>051-000-1111</h6>
+        <p>
+          분실하신 물건을 보관하고 있습니다.<br>
+          아래의 절차에 따라 분실물을 관리 중이니 안전관리팀 051-100-1111 으로 분실물 보관여부 확인 후 인계 받으시기 바랍니다.
+        </p>
+
+        <ul>
+          <li>
+            <h3>분실물 습득</h3>
+            <p>공연장, 화관구내 등</p>
+          </li>
+          <li><img src="images/four_right_arrow.png" alt="화살표"></li>
+          <li>
+            <h3>분실물 보관관리</h3>
+            <p>
+              안내데스크 및 안전관리팀에서 <br>
+              3개월이내 보관
+            </p>
+          </li>
+          <li><img src="images/four_right_arrow.png" alt="화살표"></li>
+          <li>
+            <h3>본인인계/경찰서 인계, 자체 폐기</h3>
+            <br>
+            <h6>본인인계</h6>
+            <p>소유 확인 후 본인 인계</p>
+            <h6>경찰서 인계, 자체폐기</h6>
+            <p>
+              습득일로부터 3개월 이내 분실소유자가 나타나지 않을 경우,<br>
+              경찰서 인계 또는 자체 폐기
+            </p>
+          </li>
+        </ul>
+      </div>
+
+
+      <div id="con2_4">
+        <h1>오시는길/주차</h1>
+        <img src="images/four_map.jpg" alt="지도">
+        <a href="#none">네이버 지도보기</a>
+        <a href="#none">카카오 지도보기</a>
+
+        <table>
+          <tr>
+            <th>지하철 이용시</th>
+            <th>버스 이용시</th>
+            <th>자가용 이용시</th>
+          </tr>
+
+          <tr>
+            <td>
+              부산역 6번출구에서 도보 25분 거리
+            </td>
+            <td>
+              5-1번 (2부두 하차, 부산항 국제여객터미널 하차)<br>
+              1004번 (부산항 국제여객터미널 하차)<br>
+            </td>
+            <td>
+              부산오페라하우스 내부주차장, 야외주차장 이용(유료)<br>
+              주차요금 : 1시간 3000원 (공연관람시 할인)<br>
+              네비게이션 검색 : 부산오페라하우스 주차장
+            </td>
+          </tr>
+        </table>
+
+        <ul>
+          <li>
+            <h4>주차장 이용안내</h4>
+          </li>
+          <li>
+            <p>
+              - 공연, 전시(유료), 체험(유료전시의 체험) 이용 관객은 부오하 공영주차장 이용 시 주차요금 할인을 받을 수 있습니다.<br>
+              - 출차 전 무인정산기에서 사전 정산을 완료하시면 출차 시 혼잡을 피할 수 있습니다.<br>
+              - 기타 할인 적용은 관련 증서를 지참하여 유인 정산소를 이용해 주시기 바랍니다.<br>
+              - 할인된 요금으로, 추가할인은 적용되지 않습니다.(ex. 경차, 장애인, 전기차 할인 등)<br>
+              - 미니버스, 대형버스는 사전예약 후 주차장 이용이 가능합니다.(최대 5면, 이용요금 문의)<br>
+              - 만차인 경우 이용 불가
+            </p>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="tab_con" id="tab_con3">
+      <h1>인터넷 예매</h1>
+      <span>인터넷 예매는 PC 홈페이지 및 모바일웹에서 예매가 가능합니다.</span>
+
+      <table>
+        <tr>
+          <th>예매 시간</th>
+          <td>
+            24시간 예매 가능 (공연시간 2시간 전까지 인터넷 예매 가능, 일부공연 제외)
+          </td>
+        </tr>
+        <tr>
+          <th>예매 방법</th>
+          <td>
+            회원가입 및 로그인 > 공연선택 > 예매날짜 / 시간 / 좌석 선택> 결제선택 / 예매완료
+          </td>
+        </tr>
+        <tr>
+          <th>예매 수수료</th>
+          <td>
+            예매 수수료 없음
+          </td>
+        </tr>
+        <tr>
+          <th id="ver_top">결제방법</th>
+          <td>
+            <h5>신용카드 결제</h5>
+            <p>
+              카드결제를 하시면 바로 결제가 완료됩니다.</p>
+            <br>
+            <h5>가상계좌 결제</h5>
+            <p>
+              - 가상계좌는 해당 공연일로부터 3일 전까지 전화나 인터넷으로 예매 할 수 있습니다.<br>
+              - 가상계좌 결제 시, 예매완료 후 받으시는 가상계좌번호로 입금하시기 바랍니다.<br>
+              &nbsp;&nbsp;(가상계좌번호는 입장권 결제마다 개별적으로 부여되는 번호입니다. <br>
+              &nbsp;&nbsp;입금처리가 되면 실시간으로 결제처리가 되기 때문에 입금 확인하실 필요가 없습니다.)<br>
+              - 가상계좌번호는 부여 받은 후 공연일 4일
+              전 예매일 기준 다음날 오후 11시 59분 이전까지, <br>
+              공연일 3일 전 기준 예매 당일 오후 11시 59분 이전까지 유효합니다. 그 이후에는 자동 소멸되기 때문에 입금이 되지 않습니다.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+
+      <h1>전화 예매</h1>
+
+      <table>
+        <tr>
+          <th>예매 시간</th>
+          <td>
+            09:00 ~ 20:00 (둘째주 넷째주 월요일 휴무, 공휴일인 경우 다음날 휴무) <br>
+            <strong>* 공연 2시간전까지 가능, 일부 공연에 한하여 전화 예매가 불가능 할 수 있습니다.</strong>
+          </td>
+        </tr>
+        <tr>
+          <th>예매 방법</th>
+          <td>
+            전화 : 051- 100 - 1000
+          </td>
+        </tr>
+        <tr>
+          <th>예매 수수료</th>
+          <td>
+            예매 수수료 없음
+          </td>
+        </tr>
+        <tr>
+          <th>결제방법</th>
+          <td>
+            신용카드, 가상계좌 결제 가능
+          </td>
+        </tr>
+      </table>
+
+
+      <h1>현장 예매</h1>
+
+      <table>
+        <tr>
+          <th>예매 시간</th>
+          <td>
+            10:00 ~ 20:00 (둘째주 넷째주 월요일 휴무. 공휴일인 경우 다음날 휴무)
+            <strong>* 점심시간: 13시~14시</strong>
+          </td>
+        </tr>
+        <tr>
+          <th>예매 방법</th>
+          <td>
+            서비스 플라자를 방문하시면 바로 예매하실 수 있습니다. 서비스 플라자 위치는 세종문화회관 중앙계단 위에 위치하고 있습니다.
+          </td>
+        </tr>
+        <tr>
+          <th>예매 수수료</th>
+          <td>
+            예매 수수료 없음
+          </td>
+        </tr>
+        <tr>
+          <th>결제방법</th>
+          <td>
+            신용카드, 가상계좌 결제 가능
+          </td>
+        </tr>
+      </table>
+
+
+      <h1>장애인, 국가유공자 우대할인 예매안내</h1>
+      <ul>
+        <li>
+          -&nbsp;장애인 복지카드와 국가유공자카드를 소지하고 계신 분들의 경우 <strong>50% 할인혜택</strong>을 제공하고 있습니다.
+
+          <ul id="circle">
+            <li><strong>장애인 복지카드(1급~3급) : 동반 1인까지 50% 할인</strong></li>
+            <li><strong>장애인 복지카드(4급~6급) : 본인에 한하여 50%할인</strong></li>
+            <li><strong>국가유공자카드 : 동반 1인까지 50% 할인</strong></li>
+            <li><strong>대관공연 및 대관전시의 경우, 해당 기획사의 정책에 따라 차이가 있습니다.</strong></li>
+          </ul>
+        </li>
+
+        <li>-&nbsp;장애인 · 국가유공자 우대할인 예매는 인터넷 예매와 현장예매, 전화예매가 가능합니다.(일부 공연의 경우, 전화예매로만 운영될 수 있습니다.)</li>
+        <li>-&nbsp;인터넷 예매와 현장예매, 전화예매 모두 입장권 수령(발권) 시 장애인 복지카드와 국가유공자 카드를 반드시 제시하셔야 합니다.<br>
+          (미증빙시 할인을 받으실 수 없으며, 선 할인 받은 금액이 있으면 차액을 지불하셔야 합니다.)</li>
+        <li>
+
+          <table id="last_table">
+            <tr>
+              <th>-&nbsp;인터넷 예매</th>
+              <td>
+                할인권종에서 장애인 국가유공자 할인을 선택하여 선 할인 예매 후 장애인 복지카드, 국가유공자 카드를 지참하시고<br>
+                현장에서 증빙 후 입장권을 수령해 주시기 바랍니다.
+              </td>
+            </tr>
+            <tr>
+              <th>-&nbsp;현장 예매</th>
+              <td>장애인 복지카드, 국가유공자 카드를 지참하시고 현장에서 증빙 후 예매와 발권을 동시에 진행하시면 됩니다.</td>
+            </tr>
+            <tr>
+              <th>-&nbsp;전화 예매</th>
+              <td>부산오페라하우스 고객센터에서 전화예매 시 장애인, 국가유공자임을 말씀해 주시고, 현장에서 장애인 복지카드, 국가유공자 카드 지참하시어<br>
+                증빙 후 입장권을 수령해 주시기 바랍니다.</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="tab_con" id="tab_con4">
+
+      <select name="genre" id="genre_choose">
+        <option hidden="" disabled="disabled" selected="selected" value="">전체</option>
+        <option value="perf">공연</option>
+        <option value="seat">좌석</option>
+        <option value="ticket">예매</option>
+        <option value="see">관람</option>
+      </select>
+
+
+      <div class="search-wrapper_fix">
+        <div class="input-holder_fix">
+          <input type="text" class="search-input_fix" placeholder="검색" />
+          <button class="search-icon_fix">
+            <span><img src="images/sub_search.png" alt=""></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="Accordion_wrap">
+        <ul id="list_top">
+          <li>번호</li>
+          <li>주제</li>
+          <li>질문</li>
+          <li>답변</li>
+        </ul>
+
+        <div class="que">
+          <ul>
+            <li>21.</li>
+            <li>공연</li>
+            <li>공연팜플렛을 구입할 수 있을까요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 공연당일은 공연장 로비에서 팜플렛을 구입하실 수 있습니다. <br>
+            공연일이 지난 경우에는 공연주최측에 문의하시기 바랍니다.<br>
+            주최측 문의전화는 각 공연정보를 참고하시기 바랍니다.<br>
+            (각 공연정보는 공연명을 아실 경우 홈페이지 상단의 검색창을 통해 검색하시거나,<br>
+            공연 날짜를 아실 경우 공연/전시 메뉴에서 캘린더를 통해 검색하시면 됩니다.) </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>20.</li>
+            <li>공연</li>
+            <li>지난 공연, 전시정보를 알고 싶어요.</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 지난 공연/전시자료를 검색하시고자 할 경우에는 홈페이지 상단의 검색창에 공연/전시명을 입력하시면 쉽고 빠르게 검색하실 수 있습니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>19.</li>
+            <li>좌석</li>
+            <li>잔여석 정보에 대해서 알고 싶어요.</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 각 공연 상세페이지의 예매버튼 하단에 잔여석정보를 보실 수 있는 버튼이 있으며, <br>
+            해당 버튼을 클릭하시면 공연일자별, 회차별 잔여석 수를 확인하실 수 있습니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>18.</li>
+            <li>좌석</li>
+            <li>제가 예매한 혹은 예매할 자리가 궁금합니다.</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 예매한 좌석을 다시 확인하실 경우는 마이페이지에서 예매확인/취소를 클릭하시면 고객분께서 예매하신 내역을 보실 수 있습니다. <br>
+            이때 예매번호 하단의 상세내역을 클릭하시면 좌석번호를 확인하실 수 있습니다. <br>
+            또한 홈페이지 좌석배치도를 참고하시면 됩니다. 예매할 자리는 인터넷예매를 하실 경우 직접 좌석을 선택하실 수 있는 장점이 있습니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>17.</li>
+            <li>관람</li>
+            <li>공연중 음식물반입이 가능한가요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 모든 일체의 음식물은 공연장 안으로 가져갈 수 없습니다. <br>
+            자신의 조그만 부주의가 공연자는 물론 객석의 관람자에게도 큰 피해를 주어 공연장 분위기를 망칠 수 있는 것을 양해해 주시고,
+            음식물은 꼭 드신 후 입장해 주시기 바랍니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>16.</li>
+            <li>관람</li>
+            <li>공연장 입장시 복장 제한이 있나요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 공연장에 입장하기 위한 복장 규정은 없습니다. <br>
+            단, 공연은 영화와 달라서 관람하시는 그 순간이 지나면 다시는 똑같은 분위기, 연기를 보실수 없는 '현장' 예술입니다.<br>
+            본인 스스로 편안하게 공연에 몰입할 수 있는 복장을 갖추시는 것이 좋습니다.<br>
+            공연을 즐겨 관람하시는 분들은 스스로의 마음가짐을 위해서 정장을 고집하시기도 합니다.또 한가지는 주변의 다른 관객들에 대한 배려입니다.<br>
+            바스락 거리는 소리가 많이 나는 재질의 옷이라던가 지나치게 화려한 색상이나 디자인은 삼가시는 것이 좋습니다.<br>
+            공연관객들께서는 그 어느때보다 시각과 청각이 예민해져 있는 상태이기때문에
+            평상시에는 잘 안들리던 소리나 모습에도 신경이 쓰일 수 밖에 없기 때문입니다.<br>
+            공연장을 찾으실 때 옷차림은 소중한 시간을 마음껏 즐길 수 있는 마음가짐을 표현하시는 무난하고 편안한 복장이 좋습니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>15.</li>
+            <li>예매</li>
+            <li>입장권을 분실했습니다. 어떻게 해야 하나요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 공연입장권은 소지자에게 우선권이 있으며, 예약정보만으로 입장하실 수는 없습니다. <br>
+
+            항상 분실하지 않도록 유의해주시기 바라며 자세한 사항은
+            서비스플라자(051-000-0000, 오전 10시부터 오후 8시까지, 13-14시 점심시간 제외)로 전화문의하시기 바랍니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>14.</li>
+            <li>예매</li>
+            <li>좌석이 지정되지 않은 초대권을 받았는데 좌석을 배정받으려면 공연얼마전에 가야할까요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 최소한 공연 30분전에 도착하셔서 해당 공연장 내 매표소 입구에서 좌석권으로 교환하시면 됩니다. <br>
+            공연직전에는 매표소가 혼잡하며, 좌석이 지정되지 않은 초대권의 경우 조기 마감될 수도 있으므로 여유있게 도착하시는 것이 좋습니다. </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>13.</li>
+            <li>예매</li>
+            <li>공연당일 예매한 표를 취소할 수 있나요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 공연 당일에는 취소,변경,환불불가 합니다. <br>
+            공연취소 가능시간은 아래와 같습니다. <br>
+
+            관람일 전일 오후 5시까지 가능합니다.
+            (평일/주말(토,일,공휴일)) </span>
+        </div>
+
+        <div class="que">
+          <ul>
+            <li>12.</li>
+            <li>예매</li>
+            <li>예매한 티켓 취소/변경/환불은 언제까지 가능한가요?</li>
+            <li>
+              <div class="arrow-wrap">
+                <span class="arrow-top">↑</span>
+                <span class="arrow-bottom">↓</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="anw">
+          <span> 관람일 전일 오후 5시까지 가능하며 (평일/주말(토,일,공휴일) 모두 해당) <br>
+
+            관람일 당일에는 취소, 변경, 환불이 불가 합니다. </span>
+        </div>
+      </div>
+
+      <ul class="nubmer">
+        <li><a href="#none"><img src="images/four_left_double.png" alt="제일앞으로"></a></li>
+        <li><a href="#none"><img src="images/four_left.png" alt="앞으로"></a></li>
+        <li><a href="#none" id="underline">1</a></li>
+        <li><a href="#none">2</a></li>
+        <li><a href="#none"><img src="images/four_right.png" alt="뒤로"></a></li>
+        <li><a href="#none"><img src="images/four_right_double.png" alt="제일뒤로"></a></li>
+      </ul>
+    </div>
+
+
+    <div class="tab_con" id="tab_con5">
+      <h1>부산 OH! 멤버십 안내</h1>
+
+      <table class="con5_table">
+        <tr>
+          <td colspan="2">
+            <h3>부산OH!멤버십만의 특별한 혜택을 누리세요!</h3>
+            <h6>
+              부산OH!멤버십은 부산오페라하우스 이용 경험에 따라 혜택을 제공하는 통합 멤버십 서비스입니다. <br>
+              지금 부산오페라하우스 홈페이지에 가입하시고, 회원만을 위한 특별한 서비스와 다양한 혜택을 누려보세요.
+            </h6>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            부산OH!멤버십<br>
+            혜택 대상자
+          </th>
+
+          <td>
+            <div id="border">
+              <ul>
+                <li>
+                  <p>홈페이지 회원 가입</p>
+                </li>
+                <li>
+                  <img src="images/arrow.png" alt="화살표">
+                </li>
+                  <ul>
+                    <li>
+                      <p>부산오페라하우스 공연/전시 예매 후 관람완료</p>
+                    </li>
+                    <li>
+                      <p>부산OH!아카데미 강좌 신청 후 수강완료</p>
+                    </li>
+                  </ul>
+              </ul>
+            </div>
+
+            <h3>
+              결제금액 100원 당 1 POINT 로 환산 하여 적립 <br>
+              부산오페라하우스 이용횟수 적립
+            </h3>
+            <p><span>
+                * 공연/전시/강좌 모두 부산오페라하우스 홈페이지에서 예매 /신청 한 내역에 한함
+              </span></p>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            부산OH!멤버십<br>
+            등급 기준 및 혜택
+            <br>
+            <strong>
+              부산OH! 멤버십 프로그램은<br>
+              <span> 부산오페라하우스 이용 경험에 따라</span><br>
+              네 개의 등급으로 나누어지며, <br>
+              등급에 따라 더욱 다양한 혜택이 제공됩니다.
+            </strong>
+          </th>
+
+          <td>
+            <ul id="con5_list">
+              <li>
+                <ul class="con5_list_inner full">
+                  <li>
+                    <p>
+                      헬로우<br>
+                      Hello
+                    </p>
+                  </li>
+                  <li>
+                    <h2>H</h2>
+                    <p>회원가입</p>
+                  </li>
+                  <li id="border_none">
+                    <p>예매 수수료 면제</p>
+                  </li>
+                  <li id="border_none">
+
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="con5_list_inner">
+                  <li>
+                    <p>
+                      블루<br>
+                      Blue
+                    </p>
+                  </li>
+                  <li>
+                    <h2>B</h2>
+                    <p>3,000P 이상<br>
+                      2회 이상 이용
+                    </p>
+                  </li>
+                  <li>
+                    <p>예매 수수료 면제</p>
+                  </li>
+                  <li>
+                    <p>
+                      공연/전시 할인<br>
+                      10~15% <br>
+                      1인 2매 (동일공연)
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      선예매
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      아카데미 할인 5%
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      초대이벤트 <br>
+                      공연/전시 중 <br>
+                      연간 최대 1회
+                    </p>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="con5_list_inner">
+                  <li>
+                    <p>
+                      화이트<br>
+                      White
+                    </p>
+                  </li>
+                  <li>
+                    <h2>W</h2>
+                    <p>3,000P 이상<br>
+                      2회 이상 이용
+                    </p>
+                  </li>
+                  <li>
+                    <p>예매 수수료 면제</p>
+                  </li>
+                  <li>
+                    <p>
+                      공연/전시 할인<br>
+                      15~25% <br>
+                      1인 4매 (동일공연)
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      선예매
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      아카데미 할인 10%
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      초대이벤트 <br>
+                      공연/전시 중 <br>
+                      연간 최대 2회
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="con5_list_inner">
+                  <li>
+                    <p>
+                      오렌지<br>
+                      Orange
+                    </p>
+                  </li>
+                  <li>
+                    <h2>O</h2>
+                    <p>10,000P 이상<br>
+                      7회 이상 이용
+                    </p>
+                  </li>
+                  <li>
+                    <p>예매 수수료 면제</p>
+                  </li>
+                  <li>
+                    <p>
+                      공연/전시 할인<br>
+                      20~30% <br>
+                      1인 6매 (동일공연)
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      선예매
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      아카데미 할인 10%
+                    </p>
+                    <h5><span>* 지정 공연에 한함</span></h5>
+                  </li>
+                  <li>
+                    <p>
+                      초대이벤트 <br>
+                      공연/전시 중 <br>
+                      연간 최대 3회
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+                <p>
+                  <span>
+                    * 일부 기획공연 (전시) 및 대관공연 (전시)의 경우, 할인율 및 할인적용 구매 가능 매수가 달라질 수 있습니다. <br>
+                    * 로그인 후 마이페이지에서 등급 및 적립 현황을 확인할 수 있습니다.
+                  </span>
+                </p>
+
+                <table id="table3">
+                  <tr>
+                    <th>
+                      <h3>
+                        부산OH!포인트 <br>
+                        적립 안내
+                      </h3>
+                    </th>
+                    <td>
+                      <p>
+                        결제금액은 100원 당 1P로 환산 되어 적립됩니다. <br>
+                        지정공연에 한하여 추가적립이 있습니다. <br>
+                        적립되는 포인트는 등급 산정의 기준으로만 활용됩니다.
+                      </p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <h3>
+                        이용횟수 <br>
+                        산정 안내
+                      </h3>
+                    </th>
+                    <td>
+
+                      <table id="table4">
+                        <tr>
+                          <th>공연/전시</th>
+                          <th>강좌</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            동일 행사 중복 관람의 경우.<br>
+                            회차가 다른 경우에는 개별 이용횟수로 산정됩니다. <br>
+                            (동일 회차는 1회 이용으로 산정)
+                          </td>
+                          <td>
+                            1강좌 당 이용횟수 1회로 산정됩니다. <br>
+                            (강좌 별 수업 횟수 무관)
+                          </td>
+                        </tr>
+                      </table>
+
+                      <p><span>* 적립일 : 공연/전시 관람일 + 1일, 강좌 종료일 + 1일 후 반영</span></p>
+
+                    </td>
+                  </tr>
+
+                </table>
+
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <h3>
+              부산OH! 멤버십 <br>
+              등급 산정 및<br>
+              자격 기간
+            </h3>
+            <strong><span>
+                부산OH!멤버십은 <br>
+                상반기 (1월~6월) 실적이 <br>
+                상위 등급 기준에 만족할 경우 <br>
+                하반기에 등급을 상향조정 합니다.
+              </span></strong>
+          </th>
+          <td>
+
+
+            <!-- <p>상반기 <br>
+  1월 ~ 6월
+  
+  하반기 <br>
+  7월 ~ 12월
+  
+  기보(연간) |
+  22년 1월~12월 실적
+  23년 등급 적용
+  
+  
+  
+  가 승급 | 22년 1월~6월 실적
+  23년 7월 ~ 24년 등급 적용
+  기본(연간)
+  23년 1월~12월 실적
+  24년 등급 적용</p> -->
+              <img src="images/5.png" alt="">
+
+
+            <p>
+              * 기본(연간) : 1월~12월 구매 실적 > 차년도 1월 반영, 등급 설정 후 1년간 혜택 유지 (1월~12월) <br>
+              * 중간 승급 : <span>1월~6월 구매 실적 > 등급 상향 기준 도달한 경우</span>, 당해 년도 7월 중간 조정 후 익년도 12월까지 유지 <br>
+              * 2023년부터 부산OH!멤버십 등급 산정을 시작합니다. 대신, 2022년은 포인트가 2배로 적립됩니다.
+
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="footer clear">
+    <div class="footer_inner">
+      <p class="f_1 opa50">
+        <a href="#none">개인정보처리방침</a>
+        <a href="#none">이메일무단수집거부</a>
+        <a href="#none">고객서비스현장</a>
+        <a href="#none">오시는길</a>
+        <a href="#none">원격지원</a>
+      </p>
+    </div>
+    <hr>
+    <div class="footer_inner">
+      <img src="images/footer_logo.png" alt="로고" class="f_logo left">
+      <p class="f_2 opa50">
+        재단법인 부산오페라하우스 부산광역시 중구 북항 (우)00000 <br>
+        대표자 : 홍길동 사업자등록번호 : 000-00-00000 <br>
+        통신판매업신고 : 부산중구-0000호
+      </p>
+
+      <p class="f_3">
+        <a href="https://www.busanpa.com/kor/Main.do" target="_blank"><img src="images/footer-bpa.jpg" alt="부산항만공사"></a>
+        <a href="https://www.busan.go.kr/index" target="_blank"><img src="images/footer-busan.png" alt="부산광역시"></a>
+        <br>
+        전화예매 및 문의 : 051-000-0000
+      </p>
+
+      <p class="clear opa50">COPYRIGHT(C) BUSAN OPERA HOUSE. ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+</body>
+
+</html>
